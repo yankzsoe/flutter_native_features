@@ -29,7 +29,7 @@ class _ImageInputState extends State<ImageInput> {
 
     final appDir = await syspaths.getApplicationDocumentsDirectory();
     print('Path App Directory: $appDir');
-    print('Path Origin Image : ${imageFile!.path}');
+    print('Path Origin Image : ${imageFile.path}');
     File imageFile2 = File(imageFile.path);
     final fileName = path.basename(imageFile.path);
     print('File Name: $fileName');
